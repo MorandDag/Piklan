@@ -17,21 +17,5 @@ public class Trigger_player : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Track"))
-        {
-            Debug.Log("bb");
-            point++;
-        }
 
-        if (other.CompareTag("Victory"))
-        {
-            Debug.Log("AA");
-            if (point > 84)
-            {
-                Debug.Log("Victory");
-                Application.LoadLevel(1);
-            }
-        }
-    }
 }

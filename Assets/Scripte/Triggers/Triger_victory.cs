@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Triger_victory : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] CounterPointsTrack counterPointsTrack;
+    
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.CompareTag("Player"))
+        {
+                Application.LoadLevel(4);
+        }
     }
 }

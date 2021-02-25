@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Track
   - Victory
+  - Timber
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - 
   - 
   - Player
-  - 
-  - 
+  - testLayer
+  - Enemy
   - 
   - 
   - 
